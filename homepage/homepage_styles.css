@@ -1,0 +1,52 @@
+.header{
+    background-color: aquamarine;
+}
+.titulo{
+    padding: 10px;
+    text-align: left;
+}
+#Principal{
+    color: black;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 45px;
+}
+.nav{
+    background-color: darkred;
+}
+.container_nav{
+    padding: 1%;
+    background-color: aqua;
+}
+.container_boton{
+    text-align: left;
+    border-color: black;
+    box-shadow: black;
+
+}
+
+.footer_global_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px 50px;
+    gap: 10%;
+    background-color: black;
+    padding: 25px;
+
+}
+.left_footer{
+    float: left;
+    padding: 5px 0;
+
+}
+.right_footer{
+    float: right;
+    padding: 5px 0;
+
+}
+.footer_container{
+    text-align: center;
+    background-color: gray;
+    color: azure;
+    padding: 10px 0;
+}
