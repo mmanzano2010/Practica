@@ -1,0 +1,34 @@
+.header{
+    background-color: rgba(127, 255, 212, 0.47);
+}
+.titulo{
+    padding: 10px;
+    text-align: left;
+}
+#Principal{
+    color: black;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 45px;
+}
+
+.container_nav{
+    background-color: rgba(0, 255, 255, 0.29);
+    position: fixed;
+    overflow: hidden;
+    width: 99%;
+
+}
+.container_nav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+
+}
+.container_nav a:hover{
+    background-color: darkgray;
+    color: aqua;
+}

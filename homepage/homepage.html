@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Mi Pagina</title>
     <link rel="stylesheet" type="text/css" href="homepage_styles.css">
+    <link rel="stylesheet" type="text/css" href="../Comunes/header_styles.css">
+    <link rel="stylesheet" type="text/css" href="../Comunes/footer_styles.css">
 </head>
 <body>
     <header class="header">
@@ -14,16 +16,66 @@
     </header>
     <nav class="nav">
         <div class="container_nav">
-            <div class="container_boton" id="cont_1">
-                <a class="nav_boton" id="bot_1" href="../Pagina1/pagina1.html">Boton 1</a>
-            </div>
+            <a href="homepage.html">Home</a>
+            <a href="../Pagina1/pagina1.html">Pagina 1</a>
+            <a href="../Contacto/contacto.html">Contacto</a>
         </div>
     </nav>
     <main class="main">
         <div class="titulo_container">
             <h1 class="titulo" id="Cuerpo">
-                Aqui va el cuerpo de la pagina
+                Pagina Principal
             </h1>
+        </div>
+        <div class="galeria_container">
+            <!--Imagenes-->
+            <div class="imagenes">
+                <div class="numero">1 / 6</div>
+                <img src="../media/images/SPA51531.JPG">
+                <div class="texto_foto">Foto 1</div>
+            </div>
+            <div class="imagenes">
+                <div class="numero">2 / 6</div>
+                <img src="../media/images/SPA51532.JPG">
+                <div class="texto_foto">Foto 2</div>
+
+            </div>
+            <div class="imagenes">
+                <div class="numero">3 / 6</div>
+                <img src="../media/images/SPA51533.JPG">
+                <div class="texto_foto">Foto 3</div>
+
+            </div>
+            <div class="imagenes">
+                <div class="numero">4 / 6</div>
+                <img src="../media/images/SPA51534.JPG">
+                <div class="texto_foto">Foto 4</div>
+
+            </div>
+            <div class="imagenes">
+                <div class="numero">5 / 6</div>
+                <img src="../media/images/SPA51535.JPG">
+                <div class="texto_foto">Foto 5</div>
+
+            </div>
+            <div class="imagenes">
+                <div class="numero">6 / 6</div>
+                <img src="../media/images/SPA51536.JPG">
+                <div class="texto_foto">Foto 6</div>
+
+            </div>
+            <!--Botones-->
+            <a class="prev" onclick="siguiente(-1)">&#10094</a>
+            <a class="next" onclick="siguiente(1)">&#10095</a>
+        </div>
+        <br>
+        <!--Circulitos de debajo de la galeria-->
+        <div style="text-align:center">
+            <span class="dot" onclick="imagenActual(1)"></span>
+            <span class="dot" onclick="imagenActual(2)"></span>
+            <span class="dot" onclick="imagenActual(3)"></span>
+            <span class="dot" onclick="imagenActual(4)"></span>
+            <span class="dot" onclick="imagenActual(5)"></span>
         </div>
     </main>
 
@@ -44,6 +96,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="homepage_scripts.js"></script>
 </body>
 </html>

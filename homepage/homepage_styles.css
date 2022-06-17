@@ -1,52 +1,91 @@
-.header{
-    background-color: aquamarine;
-}
-.titulo{
-    padding: 10px;
-    text-align: left;
-}
-#Principal{
-    color: black;
-    margin-left: 5%;
-    margin-top: 2%;
-    font-size: 45px;
-}
-.nav{
-    background-color: darkred;
-}
-.container_nav{
-    padding: 1%;
-    background-color: aqua;
-}
-.container_boton{
-    text-align: left;
-    border-color: black;
-    box-shadow: black;
 
+
+.titulo_container{
+    display: block;
+    font-family: "Bodoni MT";
+    padding: 10px 10px;
 }
 
-.footer_global_container{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 50px 50px;
-    gap: 10%;
+
+* {box-sizing:border-box}
+
+/*Galeria*/
+
+.galeria_container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/*Imagenes*/
+.imagenes{
+    display: none;
+}
+
+/*Botones de previo y siguiente*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
     background-color: black;
-    padding: 25px;
-
 }
-.left_footer{
-    float: left;
-    padding: 5px 0;
 
-}
-.right_footer{
-    float: right;
-    padding: 5px 0;
-
-}
-.footer_container{
+/*Pie de foto galeria*/
+.texto_foto{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
     text-align: center;
-    background-color: gray;
-    color: azure;
-    padding: 10px 0;
+}
+/*Numerito*/
+.numero{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*Botones*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: darkgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
