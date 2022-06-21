@@ -14,10 +14,9 @@
 
 .container_nav{
     background-color: rgba(0, 255, 255, 0.29);
-    position: fixed;
+    position: absolute;
     overflow: hidden;
     width: 99%;
-
 }
 .container_nav a{
     float: left;
@@ -31,4 +30,33 @@
 .container_nav a:hover{
     background-color: darkgray;
     color: aqua;
+}
+
+/*Migas de pan*/
+.migas_de_pan_container{
+    padding: 15px;
+    display: block;
+}
+.migas_de_pan{
+    padding: 10px 16px;
+    list-style: none;
+    background-color: azure;
+}
+.migas_de_pan li{
+    display: inline;
+    font-size: 16px;
+}
+
+.migas_de_pan li+li:before{
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+.migas_de_pan li a{
+    color: blue;
+    text-decoration: none;
+}
+.migas_de_pan li a:hover{
+    color: navy;
+    text-decoration: underline;
 }

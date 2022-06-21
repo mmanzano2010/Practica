@@ -4,7 +4,7 @@
     grid-template-rows: 50px 50px;
     gap: 10%;
     background-color: black;
-    position: fixed;
+    position: relative;
     overflow: hidden;
     bottom: 0;
     width: 99%;

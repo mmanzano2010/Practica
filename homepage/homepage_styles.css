@@ -12,13 +12,18 @@
 /*Galeria*/
 
 .galeria_container{
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
+    display: block;
 }
 /*Imagenes*/
 .imagenes{
     display: none;
+}
+.imagenes img{
+    width: 100%;
+    height: auto;
 }
 
 /*Botones de previo y siguiente*/
@@ -88,4 +93,13 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/*Descripcion de la pagina*/
+.descripcion{
+    text-align: center;
+}
+.texto_grande{
+    padding: 25px;
+    text-align: center;
 }
